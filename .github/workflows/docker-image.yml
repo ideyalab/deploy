@@ -1,9 +1,9 @@
 name: Maven CI/CD
 on:
  push:
-  branches: [ ecs ]
+  branches: [ master ]
  pull_request:
-  branches: [ ecs ]
+  branches: [ master ]
 
 jobs:
   build_and_test:
