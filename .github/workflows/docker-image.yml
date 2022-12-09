@@ -19,4 +19,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag ${{ secrets.DOCKER_USERNAME}}/${{secrets.DOCKER_REPO }}
     - name: docker push
-      run: sudo docker push ${{ secrets.DOCKER_USERNAME}}/${{secrets.DOCKER_REPO }}
+      run: docker push ${{ secrets.DOCKER_USERNAME}}/${{secrets.DOCKER_REPO }}
